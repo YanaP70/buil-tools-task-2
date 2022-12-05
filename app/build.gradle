@@ -1,0 +1,8 @@
+dependencies {
+    implementation project(':core')
+}
+
+task appExec(type: JavaExec){
+    main='App'
+    classpath sourceSets.test.runtimeClasspath
+}
